@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
@@ -9,9 +8,9 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     ),
-    title: "Local SEO for Dentists",
-    description: "Dominate local search results and Google Maps to attract more nearby patients looking for dental services.",
-    features: ["Google My Business optimization", "Local citation building", "Location-specific content", "Review management"]
+    title: "Lokales SEO für Zahnärzte",
+    description: "Dominieren Sie lokale Suchergebnisse und Google Maps, um mehr Patienten in Ihrer Nähe zu gewinnen.",
+    features: ["Google My Business Optimierung", "Lokale Verzeichniseinträge", "Ortsbezogene Inhalte", "Bewertungsmanagement"]
   },
   {
     icon: (
@@ -19,9 +18,9 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
       </svg>
     ),
-    title: "Dental Content Marketing",
-    description: "Educational, optimized content that establishes your practice as an authority and attracts new patients.",
-    features: ["Procedure-specific content", "Dental blog writing", "Patient educational resources", "Content strategy"]
+    title: "Content-Marketing für Zahnärzte",
+    description: "Bildende, optimierte Inhalte, die Ihre Praxis als Autorität etablieren und neue Patienten anziehen.",
+    features: ["Inhaltsseiten zu Behandlungen", "Blogartikel für Zahnärzte", "Patientenaufklärungsmaterial", "Content-Strategie"]
   },
   {
     icon: (
@@ -29,9 +28,9 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
-    title: "Technical Dental SEO",
-    description: "Optimize your dental website's technical aspects to improve search visibility and user experience.",
-    features: ["Site speed optimization", "Mobile responsiveness", "Schema markup for dentists", "Technical audits"]
+    title: "Technisches Dental-SEO",
+    description: "Optimieren Sie die technischen Aspekte Ihrer Website für bessere Sichtbarkeit und Nutzererfahrung.",
+    features: ["Optimierung der Ladegeschwindigkeit", "Mobile Anpassung", "Schema-Markup für Zahnärzte", "Technische Audits"]
   },
   {
     icon: (
@@ -39,9 +38,9 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
       </svg>
     ),
-    title: "Dental SEO Analytics",
-    description: "Comprehensive tracking and reporting on all your dental practice's key performance metrics.",
-    features: ["Patient lead tracking", "Conversion optimization", "Competitor analysis", "Monthly reporting"]
+    title: "Dental-SEO Analytics",
+    description: "Umfassendes Tracking und Reporting aller wichtigen Leistungskennzahlen Ihrer Zahnarztpraxis.",
+    features: ["Tracking von Patientenanfragen", "Conversion-Optimierung", "Wettbewerbsanalyse", "Monatliche Berichte"]
   }
 ];
 
@@ -57,7 +56,7 @@ const Services = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            Specialized SEO Services For Dental Practices
+            Spezialisierte SEO-Dienste für Zahnarztpraxen
           </motion.h2>
           <motion.p 
             className="text-lg text-gray-600"
@@ -66,7 +65,7 @@ const Services = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            Our dental-focused SEO strategies are designed specifically for the unique needs and challenges of dental practices.
+            Unsere SEO-Strategien sind speziell auf die Bedürfnisse und Herausforderungen von Zahnarztpraxen abgestimmt.
           </motion.p>
         </div>
         

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,9 +14,9 @@ const Contact = () => {
     practice: "",
     message: "",
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
@@ -25,14 +24,13 @@ const Contact = () => {
       [name]: value,
     });
   };
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
+
     setTimeout(() => {
-      toast.success("Thank you for your message! We'll be in touch shortly.");
+      toast.success("Danke für Ihre Nachricht! Wir melden uns in Kürze bei Ihnen.");
       setFormData({
         name: "",
         email: "",
@@ -43,7 +41,7 @@ const Contact = () => {
       setIsSubmitting(false);
     }, 1000);
   };
-  
+
   return (
     <div id="contact" className="py-16 md:py-24">
       <div className="section-container">
@@ -54,12 +52,12 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Let's Grow Your Dental Practice Together</h2>
-            
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Lassen Sie uns Ihre Zahnarztpraxis gemeinsam wachsen lassen</h2>
+
             <p className="text-lg text-gray-600 mb-8">
-              Ready to attract more patients and grow your dental practice? Contact us today for a free consultation and SEO audit.
+              Bereit, mehr Patienten zu gewinnen und Ihre Praxis auszubauen? Kontaktieren Sie uns für eine kostenlose Beratung und SEO-Analyse.
             </p>
-            
+
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="bg-dental-100 rounded-full p-3 mr-4">
@@ -68,11 +66,11 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900">Phone</h4>
+                  <h4 className="text-lg font-semibold text-gray-900">Telefon</h4>
                   <p className="text-gray-600">(555) 123-4567</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="bg-dental-100 rounded-full p-3 mr-4">
                   <svg className="w-6 h-6 text-dental-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,11 +78,11 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900">Email</h4>
+                  <h4 className="text-lg font-semibold text-gray-900">E-Mail</h4>
                   <p className="text-gray-600">info@dentalrankseo.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="bg-dental-100 rounded-full p-3 mr-4">
                   <svg className="w-6 h-6 text-dental-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,13 +91,13 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900">Address</h4>
+                  <h4 className="text-lg font-semibold text-gray-900">Adresse</h4>
                   <p className="text-gray-600">123 Market Street, Suite 456<br/>San Francisco, CA 94105</p>
                 </div>
               </div>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -107,39 +105,39 @@ const Contact = () => {
             viewport={{ once: true, margin: "-100px" }}
           >
             <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 border border-gray-200">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Get Your Free SEO Audit</h3>
-              
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Kostenlose SEO-Analyse anfordern</h3>
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Full Name</Label>
+                    <Label htmlFor="name">Vollständiger Name</Label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="Dr. John Smith"
+                      placeholder="Dr. Max Mustermann"
                       required
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
+                    <Label htmlFor="email">E-Mail-Adresse</Label>
                     <Input
                       id="email"
                       name="email"
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@yourdentalpractice.com"
+                      placeholder="max@zahnarztpraxis.de"
                       required
                     />
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number</Label>
+                    <Label htmlFor="phone">Telefonnummer</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -149,38 +147,38 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
-                    <Label htmlFor="practice">Practice Name</Label>
+                    <Label htmlFor="practice">Name der Praxis</Label>
                     <Input
                       id="practice"
                       name="practice"
                       value={formData.practice}
                       onChange={handleChange}
-                      placeholder="Smith Family Dental"
+                      placeholder="Zahnarztpraxis Mustermann"
                       required
                     />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
-                  <Label htmlFor="message">Tell us about your practice</Label>
+                  <Label htmlFor="message">Erzählen Sie uns von Ihrer Praxis</Label>
                   <Textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="What are your goals? What challenges are you facing?"
+                    placeholder="Was sind Ihre Ziele? Welche Herausforderungen gibt es?"
                     rows={4}
                   />
                 </div>
-                
+
                 <Button 
                   type="submit" 
                   className="w-full bg-dental-600 hover:bg-dental-700"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Submitting..." : "Get Free SEO Audit"}
+                  {isSubmitting ? "Wird gesendet..." : "Kostenlose SEO-Analyse anfordern"}
                 </Button>
               </form>
             </div>

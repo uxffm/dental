@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -6,38 +5,38 @@ const caseStudies = [
   {
     name: "Smile360 Dental",
     location: "Chicago, IL",
-    service: "Local SEO & Content Marketing",
+    service: "Lokales SEO & Content-Marketing",
     image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     stats: [
-      { label: "Increase in organic traffic", value: "212%" },
-      { label: "New patient appointments", value: "147%" },
-      { label: "Keywords in top 10", value: "89" },
+      { label: "Anstieg des organischen Traffics", value: "212%" },
+      { label: "Neue Patienten-Termine", value: "147%" },
+      { label: "Keywords in den Top 10", value: "89" },
     ],
-    testimonial: "DentalRank transformed our online presence. We're now the top-ranked dental practice in our area for most major keywords."
+    testimonial: "DentalRank hat unsere Online-Präsenz komplett verändert. Wir sind jetzt die bestplatzierte Zahnarztpraxis in unserer Region für die wichtigsten Keywords."
   },
   {
     name: "Bright Family Dental",
     location: "Austin, TX",
-    service: "Technical SEO & Google Maps",
+    service: "Technisches SEO & Google Maps",
     image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     stats: [
-      { label: "Increase in Google visibility", value: "178%" },
-      { label: "Growth in phone calls", value: "92%" },
-      { label: "Return on investment", value: "5.3x" },
+      { label: "Steigerung der Google-Sichtbarkeit", value: "178%" },
+      { label: "Zunahme an Anrufen", value: "92%" },
+      { label: "Return on Investment", value: "5.3x" },
     ],
-    testimonial: "Working with DentalRank has been amazing. They understand the dental industry and delivered incredible results for our practice."
+    testimonial: "Die Zusammenarbeit mit DentalRank war großartig. Sie kennen die Dentalbranche und haben für unsere Praxis erstaunliche Ergebnisse erzielt."
   },
   {
     name: "Clear Path Orthodontics",
     location: "Denver, CO",
-    service: "Content Strategy & Local SEO",
+    service: "Content-Strategie & Lokales SEO",
     image: "https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     stats: [
-      { label: "First page keywords", value: "63" },
-      { label: "Increase in consultations", value: "104%" },
-      { label: "Growth in revenue", value: "83%" },
+      { label: "Keywords auf Seite 1", value: "63" },
+      { label: "Anstieg der Beratungsgespräche", value: "104%" },
+      { label: "Umsatzsteigerung", value: "83%" },
     ],
-    testimonial: "The specialized knowledge DentalRank has for orthodontic practices made all the difference. Our online bookings have doubled."
+    testimonial: "Das spezialisierte Wissen von DentalRank über Kieferorthopädie hat den Unterschied gemacht. Unsere Online-Buchungen haben sich verdoppelt."
   }
 ];
 
@@ -53,7 +52,7 @@ const CaseStudies = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            Success Stories From Dental Practices
+            Erfolgsgeschichten aus Zahnarztpraxen
           </motion.h2>
           <motion.p 
             className="text-lg text-gray-600"
@@ -62,7 +61,7 @@ const CaseStudies = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            See how we've helped dental practices across the country increase their visibility, attract new patients, and grow their practice.
+            Sehen Sie, wie wir Zahnarztpraxen im ganzen Land geholfen haben, ihre Sichtbarkeit zu erhöhen, neue Patienten zu gewinnen und zu wachsen.
           </motion.p>
         </div>
         
@@ -107,7 +106,7 @@ const CaseStudies = () => {
                     "{study.testimonial}"
                   </blockquote>
                   
-                  <Button>View Full Case Study</Button>
+                  <Button>Vollständige Fallstudie ansehen</Button>
                 </div>
               </div>
             </motion.div>
@@ -116,7 +115,7 @@ const CaseStudies = () => {
         
         <div className="text-center mt-16">
           <Button variant="outline" className="border-dental-600 text-dental-600 hover:bg-dental-50">
-            View All Case Studies
+            Alle Fallstudien ansehen
           </Button>
         </div>
       </div>

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import {
   Carousel,
@@ -15,7 +14,7 @@ const testimonials = [
     practice: "Johnson Family Dental",
     location: "Portland, OR",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-    quote: "Working with DentalRank has been transformative for our practice. They truly understand the dental industry and have helped us reach new patients we couldn't before. Our schedule is now consistently full, and we attribute much of that to their SEO expertise.",
+    quote: "Die Zusammenarbeit mit DentalRank war transformierend für unsere Praxis. Sie verstehen die Dentalbranche wirklich und haben uns geholfen, neue Patienten zu erreichen, die wir vorher nicht gewinnen konnten. Unser Terminbuch ist jetzt konstant voll – dank ihrer SEO-Expertise.",
     rating: 5
   },
   {
@@ -23,7 +22,7 @@ const testimonials = [
     practice: "Parkview Dental Associates",
     location: "Boston, MA",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-    quote: "I've worked with several marketing companies before finding DentalRank. The difference is night and day. Their dental-specific SEO knowledge helped us target exactly the kinds of patients we wanted to attract. The ROI has been impressive.",
+    quote: "Ich habe mit mehreren Marketingfirmen gearbeitet, bevor ich DentalRank gefunden habe. Der Unterschied ist enorm. Ihr zahnmedizinisches SEO-Wissen hat uns geholfen, genau die Patienten anzusprechen, die wir gewinnen wollten. Der ROI ist beeindruckend.",
     rating: 5
   },
   {
@@ -31,7 +30,7 @@ const testimonials = [
     practice: "Smile Solutions",
     location: "Miami, FL",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-    quote: "As a new practice, we needed to build our patient base quickly. DentalRank's strategies helped us compete with established practices in our area. Their team is responsive, knowledgeable, and focused on results.",
+    quote: "Als neue Praxis mussten wir schnell Patienten gewinnen. Die Strategien von DentalRank haben uns geholfen, mit etablierten Praxen zu konkurrieren. Ihr Team ist reaktionsschnell, kompetent und zielorientiert.",
     rating: 5
   },
   {
@@ -39,7 +38,7 @@ const testimonials = [
     practice: "Premier Dental Care",
     location: "Atlanta, GA",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-    quote: "We've seen a 200% increase in new patient calls since working with DentalRank. Their understanding of how patients search for dental services online has given us a real competitive edge in our market.",
+    quote: "Seit der Zusammenarbeit mit DentalRank haben wir einen Anstieg von 200 % bei neuen Patientenanrufen verzeichnet. Ihr Verständnis dafür, wie Patienten online nach zahnmedizinischen Leistungen suchen, verschafft uns einen echten Wettbewerbsvorteil.",
     rating: 5
   }
 ];
@@ -56,7 +55,7 @@ const Testimonials = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            What Dental Professionals Say
+            Was Zahnärzte sagen
           </motion.h2>
           <motion.p 
             className="text-lg text-gray-600"
@@ -65,7 +64,7 @@ const Testimonials = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            Don't just take our word for it. Hear from the dental practices we've helped succeed.
+            Hören Sie nicht nur auf uns – erfahren Sie, wie wir Zahnarztpraxen zum Erfolg verholfen haben.
           </motion.p>
         </div>
         
